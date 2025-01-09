@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #000;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(at top left, rgb(217, 188, 241) 0%, rgba(0, 0, 255, 1)  100%);
+    background-repeat: no-repeat;
+}
+
+.MainDiv{
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+    background-color: aquamarine;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1{
+        font-weight: 600;
+        font-size: 50px;
+        color: yellowgreen;
+    }
+    span{
+        font-weight: 300;
+    }
+}
+.aboutme{
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+    position: relative;
+    padding: 5px;
+}
+@keyframes change {
+    0%{
+        stroke: red;
+    }
+    25%{
+        stroke: purple;
+    }
+    50%{
+        stroke: yellow;
+    }
+    75%{
+        stroke: green;
+    }
+    100%{
+        stroke: red;
+    }
+}
+.logo:hover{
+    scale: 1.1;
+    background-color: #85d69b;
+    transition: 0.1s;
+    animation: change 2s infinite forwards;
+}
+.logox:hover{
+    scale: 1.1;
+    background-color: #85d69b;
+    transition: 0.1s;
+}
+.minix{
+transition: 0.1s;
+}
+.draggable {
+    position: relative;
+    width: 200vw;
+    height: 3vh;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: grab;
+    z-index: 999;
+  }
+  
+  .draggable.dragging {
+    cursor: grabbing;
+}
+.fillings{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(81, 81, 92);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 999;
+}
