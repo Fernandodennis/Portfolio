@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Sans+SC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     text-decoration: none;
@@ -23,12 +23,13 @@ main{
     position: relative;
     width: 70vw;
     height: 80vh;
-    background-color: aquamarine;
+    background-color: transparent;
     border-radius: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    backdrop-filter: blur(100px);
 
     h1{
         font-weight: 600;
@@ -65,9 +66,9 @@ main{
 }
 .logo:hover{
     scale: 1.1;
-    background-color: #85d69b;
     transition: 0.1s;
     animation: change 2s infinite forwards;
+    cursor: pointer;
 }
 .logox:hover{
     scale: 1.1;
@@ -82,7 +83,6 @@ transition: 0.1s;
     width: 200vw;
     height: 3vh;
     background: #f0f0f0;
-    border: 1px solid #ccc;
     padding: 10px;
     cursor: grab;
     z-index: 999;
@@ -92,13 +92,65 @@ transition: 0.1s;
     cursor: grabbing;
 }
 .fillings{
-    width: 50vw;
-    height: 50vh;
+    width: 60vw;
+    height: 65vh;
     background-color: rgb(81, 81, 92);
     display: flex;
     justify-content: center;
     position: absolute;
     border-radius: 8px;
-    overflow: hidden;
+    overflow-y: scroll;
     z-index: 999;
+    border: 1px solid #f0f0f0;
+}
+.content{
+    width: 60vw;
+    height: 65vh;
+    background-color: #241a55;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-evenly;
+
+    .header{
+        position: fixed;
+        width: 60vw;
+        height: 30vh;
+        background-color: transparent;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        align-items: flex-start;
+        justify-items: center;
+        flex-direction: column;
+
+        h1{
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: whitesmoke;
+            font-size: xx-large;
+            padding-top: 8%;
+
+            span{
+                font-family: "Noto Sans SC", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: whitesmoke;
+                font-size: 20px;
+            }
+        }
+        
+        p{
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            color: whitesmoke;
+
+            a{
+                text-decoration: underline;
+                color: blueviolet;
+                font-weight: 500;
+            }
+        }
+    }
 }

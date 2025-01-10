@@ -3,7 +3,7 @@ import "../styles/global.css";
 
 const About = () => {
   const [isDragging, setIsDragging] = useState(false);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({ x: -266, y: -128 });
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
 
@@ -102,8 +102,15 @@ const About = () => {
               </svg>
             </button>
             <p>about</p>
+           </div>
+           <div className="content">
+             <div className="header">
+              <h1>Dennis Fernando<span> 王炮森</span></h1>
+              <p>Concept based web developer and a Game developer</p>
+              <p>Former apprentice at <a href="https://id.linkedin.com/company/att-group-indonesia" target="_blank">ATT Group</a></p>
+             </div> 
+           </div>
           </div>
-        </div>
       )}
     </div>
   );
